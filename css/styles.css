@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url('../images/bg-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-weight: 400;
+}
+
+/* Top Section*/
+.img-logo {
+  margin: 60px 80px 30px 80px;
+  width: 20%;
+}
+
+/* Middle Section*/
+.middle {
+  margin: 30px 80px;
+}
+
+.col {
+  float: left;
+}
+
+.left {
+  width: 55%;
+  margin-right: 40px;
+}
+
+.right {
+  width: 40%;
+}
+
+.img-illustration {
+  width: 100%;
+  margin-right: 40px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  padding-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+button {
+  display: block;
+  padding: 15px 45px;
+  border-radius: 22px;
+  border: none;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+}
+
+/* Bottom Section*/
+.bottom {
+  padding-bottom: 11px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: right;
+  margin: 0 80px;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.social {
+  font-size: 2.5rem;
+  margin: 0 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+ }
+
+/* Mobile Design 375px */
+ @media only screen and (max-width: 375px) {
+   /* For mobile phones: */
+   .col {
+     width: 100%;
+   }
+
+   .container {
+     background-image: url('../images/bg-mobile.svg');
+     background-repeat: no-repeat;
+     background-size: contain;
+     font-weight: 400;
+   }
+
+   .img-logo {
+    margin: 40px 80px 30px 40px;
+     width: 35%;
+   }
+
+   .img-illustration {
+     width: 100%;
+     margin: 0;
+   }
+
+   .middle {
+     margin: 20px 40px;
+     text-align: center;
+   }
+
+   h1 {
+     font-size: 1.5rem
+   }
+
+   button {
+     display: block;
+     margin: 40px auto;
+     padding: 15px 75px;
+   }
+
+   .bottom {
+     text-align: center;
+   }
+
+   ul {
+     text-align: center;
+     padding: 0;
+   }
+
+   li {
+     display: inline-block;
+     margin: 0 5px;
+   }
+ }
+
+/* Icons social media*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../images/icons/icomoon.eot?z3n4m3');
+  src:  url('../images/icons/icomoon.eot?z3n4m3#iefix') format('embedded-opentype'),
+    url('../images/icons/icomoon.ttf?z3n4m3') format('truetype'),
+    url('../images/icons/icomoon.woff?z3n4m3') format('woff'),
+    url('../images/icons/icomoon.svg?z3n4m3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e902";
+  color: white;
+}
+
+.icon-twitter:before {
+  content: "\e903";
+  color: white;
+}
+
+.icon-instagram:before {
+  content: "\e901";
+  color: white;
+}
